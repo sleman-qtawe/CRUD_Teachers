@@ -1,25 +1,25 @@
 # CRUD Teachers & Assistant Teachers Backend
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is a backend system that provides functionality for managing teachers and assistant teachers using **Node.js**, **Express**, and **MySQL**. The system supports **CRUD (Create, Read, Update, Delete)** operations for both teachers and assistant teachers, along with the necessary database interactions.
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 To begin, clone the repository to your local machine using Git:
 
 ```sh
-1️⃣ Clone the Repository
+x Clone the Repository
 
 git clone https://github.com/sleman-qtawe/CRUD_Teachers.git
 cd CRUD_Teachers/backend
 
 
-2️⃣ Install Dependencies
+ Install Dependencies
 
 npm install
 
-3️⃣ Create a .env File
+ Create a .env File
 
 DB_HOST=localhost
 DB_USER=root
@@ -27,7 +27,7 @@ DB_PASSWORD=yourpassword
 DB_NAME=teachers_db
 PORT=5000
 
-4️⃣ Set Up the MySQL Database
+ Set Up the MySQL Database
 
 CREATE DATABASE teachers_db;
 USE teachers_db;
@@ -53,7 +53,7 @@ CREATE TABLE assistant_teachers (
     FOREIGN KEY (supervisor_id) REFERENCES teachers(id) ON DELETE CASCADE
 );
 
-5️⃣ Start the Server
+ Start the Server
 npm start
 or  
 npm run dev 
